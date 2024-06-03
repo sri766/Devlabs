@@ -20,7 +20,7 @@ import "aos/dist/aos.css";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./Component/ScrollToTop";
 
-//cards
+
 import RemoteJobs from "./pages/RemoteJobs";
 import AI from "./pages/AI";
 import Movie from "./pages/Movie";
@@ -46,12 +46,6 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/open-source' element={<OpenSource />}></Route>
           <Route path='/review' element={<Review />} />
-          <Route path='*' element={<NotFound />} /> {/* 404 route */}
-          <Route path="/" element={<Home searchQuery={searchQuery} />}></Route>
-          <Route path="/bookmark" element={<BookMark />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/open-source" element={<OpenSource />}></Route>
-          <Route path="/review" element={<Review />}></Route>
           <Route path="/faq" element={<Faq />}></Route>
 
           <Route path="/remote-jobs" element={<RemoteJobs />}></Route>
